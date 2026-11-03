@@ -1,0 +1,10 @@
+
+/* Add some space above the webpage content */
+body {
+    padding-top: 40px;
+}
+
+/* Add space below the main heading */
+#heading {
+    margin-bottom: 30px;
+}
