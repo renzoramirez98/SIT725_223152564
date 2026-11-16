@@ -1,0 +1,17 @@
+{
+  "name": "sit725-3-2p-locate-a-socket",
+  "version": "1.0.0",
+  "private": true,
+  "description": "SIT725 Task 3.2P Express and Materialize prototype for Locate a Socket",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

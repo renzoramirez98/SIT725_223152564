@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 390" role="img" aria-label="Electric vehicle next to charging point">
+<defs><linearGradient id="sky" x2="0" y2="1"><stop stop-color="#e4f4f4"/><stop offset="1" stop-color="#cce7e7"/></linearGradient></defs>
+<rect width="560" height="390" rx="26" fill="url(#sky)"/><circle cx="460" cy="67" r="39" fill="#f9d9a1"/><path d="M0 318Q150 283 285 321T560 311V390H0Z" fill="#b1d6d3"/>
+<rect x="414" y="107" width="71" height="200" rx="12" fill="#174c56"/><rect x="423" y="118" width="53" height="75" rx="5" fill="#d0f2e8"/><path d="M450 128l-13 31h13l-7 24 20-33h-14l8-22Z" fill="#087e83"/><rect x="437" y="210" width="25" height="11" rx="5" fill="#66d3be"/><path d="M485 177Q526 185 520 231T490 275" stroke="#174c56" stroke-width="8" fill="none" stroke-linecap="round"/>
+<path d="M100 262l35-80q13-21 47-21h104q29 0 44 22l33 80Z" fill="#187d83"/><path d="M151 183h137l29 68H120Z" fill="#d9f0f1"/><path d="M94 255h290q16 0 16 18v30H77v-27q0-21 17-21Z" fill="#113c4a"/><path d="M99 271h275v17H99Z" fill="#237985"/><rect x="108" y="267" width="42" height="16" rx="8" fill="#fff0d2"/><rect x="321" y="267" width="43" height="16" rx="8" fill="#fff0d2"/><circle cx="145" cy="311" r="29" fill="#253540"/><circle cx="145" cy="311" r="14" fill="#c8d8df"/><circle cx="330" cy="311" r="29" fill="#253540"/><circle cx="330" cy="311" r="14" fill="#c8d8df"/>
+<path d="M78 333h418" stroke="#7baba8" stroke-width="5" stroke-linecap="round"/>
+</svg>
