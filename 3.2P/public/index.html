@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Locate a Socket demonstration: sample EV charging locations and connector types.">
+  <title>Locate a Socket | SIT725 3.2P</title>
+  <!-- Materialize components and icons, as introduced in Workshop 3. -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <nav aria-label="Main navigation" class="site-nav z-depth-0">
+    <div class="nav-wrapper container">
+      <a href="#top" class="brand-logo brand-wordmark">Locate a Socket</a>
+      <ul class="right nav-menu">
+        <li><a href="#locations">Explore chargers</a></li>
+        <li><a href="https://github.com/renzoramirez98/SIT725_223152564" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="top">
+    <section class="hero-section">
+      <div class="container hero-layout">
+        <div class="hero-copy">
+          <span class="eyebrow">SIT725 / WEEK 3 PROTOTYPE</span>
+          <h1>Find a charging stop that fits your journey.</h1>
+          <p>Explore connector types and charging power using a small set of sample Australian EV charging locations.</p>
+          <a class="btn-large waves-effect waves-light primary-button" href="#locations">Browse sample locations</a>
+          <p class="demo-note"><strong>Demo only:</strong> these are illustrative records, not live charging stations or availability data.</p>
+        </div>
+        <div class="hero-art">
+          <img class="responsive-img" src="/images/hero-ev.svg" alt="Illustration of an electric vehicle beside a charger">
+        </div>
+      </div>
+    </section>
+
+    <section class="locations-section container" id="locations" aria-labelledby="locations-heading">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow dark">CHARGING OPTIONS</span>
+          <h2 id="locations-heading">Sample charging locations</h2>
+          <p>Cards are loaded from the Express GET endpoint when the page opens.</p>
+        </div>
+        <div class="filter-area">
+          <label for="connector-filter">Filter by connector</label>
+          <select id="connector-filter" class="browser-default" aria-label="Filter chargers by connector">
+            <option value="all">All connectors</option>
+            <option value="CCS2">CCS2</option>
+            <option value="Type 2">Type 2</option>
+            <option value="CHAdeMO">CHAdeMO</option>
+          </select>
+        </div>
+      </div>
+      <div id="loading-message" class="status-message" role="status">Loading sample chargers...</div>
+      <div id="card-section" class="row" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <div id="details-modal" class="modal" aria-labelledby="details-heading">
+    <div class="modal-content">
+      <h3 id="details-heading">Charging location</h3>
+      <p id="details-area"></p>
+      <p id="details-connector"></p>
+      <p id="details-power"></p>
+      <p id="details-description"></p>
+      <p class="demo-note dark-note">Sample record only. Check a verified charging provider before travelling.</p>
+    </div>
+    <div class="modal-footer"><button class="modal-close btn-flat" type="button">Close</button></div>
+  </div>
+
+  <footer class="page-footer"><div class="container">Locate a Socket · SIT725 Task 3.2P · Sample data only</div></footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="/js/scripts.js"></script>
+</body>
+</html>
